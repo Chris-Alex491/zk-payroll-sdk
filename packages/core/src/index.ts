@@ -68,6 +68,7 @@ export type {
   ConfigValidationResult,
   ConfigMigrationWarning,
   ConfigMigrationResult,
+  LoadClientConfigOptions,
 } from "./config";
 export {
   DEFAULT_CONFIG,
@@ -77,6 +78,7 @@ export {
   assertValidConfig,
   migrateConfig,
   detectDeprecatedConfigFields,
+  loadClientConfig,
 } from "./config";
 export * from "./cache";
 export * from "./amendments";
@@ -239,4 +241,3 @@ export * from "./schedules";
 // The module lives in `payroll/`; the root barrel points at the real path
 // (it previously referenced a non-existent `./salary-policy`).
 export * from "./payroll/salaryPolicyImpact";
-
